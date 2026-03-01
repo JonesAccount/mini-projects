@@ -3,6 +3,7 @@ from arithmetic import arithmetic_module
 
 
 def terminal_module():
+    clear()
     output(f"{newline * 2}Консольная система WK-26{newline}{"– " * 20}")
     output(f"Терминал | help для справки{newline}")
     while True:
