@@ -5,7 +5,7 @@
 #define ROWS 6
 #define COLS 12
 
-
+   
 char map[ROWS][COLS] = {
         "###########",
         "#      #  #",
