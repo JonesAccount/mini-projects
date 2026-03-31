@@ -14,6 +14,10 @@ void victoryCheck(char *cells);
 
 int main(void) {
 	char player = 'O';
+
+	usint winsO = 0;
+	usint winsX = 0;
+
     char cells[] = {
         '1', '2', '3',
         '4', '5', '6',
@@ -34,15 +38,24 @@ int main(void) {
 
 
 void renderPlayfield(char *cells, char player) {
-    out("\n\t  КРЕСТИКИ-НОЛИКИ\n\n");
+    out("\n\n\t   \033[1m\033[31mX\033[0m\033[1m КРЕСТИКИ-НОЛИКИ \033[32mO\033[0m\033[0m\n\n\n");
+    out("  \033[1mСТАТИСТИКА                ИГРА\033[0m\n");
+    out("• • • • • • • • • • • • • • • • • • •\n");
 
     for (int i = 0; i < 9; i++) {
-        if ((i % 3) == 0) { out("\n\t    "); }
-        out("  %c", cells[i]);
+        if ((i % 3) == 0) { out("\n\t\t\t "); }
+
+        if (cells[i] == 'X') {
+        	out("\033[31m  X\033[0m");
+        } else if (cells[i] == 'O') {
+        	out("\033[32m  O\033[0m");
+        } else {
+        	out("  %c", cells[i]);
+        }
     }
 
-    out("\n\n\n\t      Ход: %c", player);
-    out("\n\t      Клетка: ");
+    out("\n\n\t\t\t   Ход: %c", player);
+    out("\n\t\t\t   Клетка: ");
 }
 
 
