@@ -1,7 +1,7 @@
 #include <stdbool.h>
-#include <stdio.h>
 #include <unistd.h>
 #include <termios.h>
+#include <stdio.h>
 
 
 #define out printf
@@ -127,7 +127,7 @@ bool victoryCheck(char *cells, char player, bool winCheck) {
 
 	usint counter = 0;
 	for (int i = 0; i < 9; i++) { if (cells[i] == 'X' || cells[i] == 'O') { counter++; } }
- 	if (counter == 9) { standoff = true; }
+ 	if (counter == 9 && winCheck != true) { standoff = true; }
 
 	return winCheck;
 }
