@@ -1,0 +1,7 @@
+# Hashes of file build rules.
+50d362cf2541b4e0a443c7ddaf2d3bb9 CMakeFiles/os
+908326ef891b9abf30d90f72a5506893 boot/bin/boot_kernel.bin
+b220f03a5bcb35d59d5f939735f30047 boot/bin/os.img
+556b6f4fde79d6c548367221c027aa5a kernel/bin/kernel_padded.bin
+1619b6ff5e1225899e75a45948e86f20 kernel/obj/kernel.o
+6bdbba232b40acb7112335c75c720fa3 kernel/obj/kernel_entry.o

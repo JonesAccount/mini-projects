@@ -1,0 +1,3 @@
+/Users/jons/Documents/GitHub/os-kazakhstaniwest/build/CMakeFiles/os.dir
+/Users/jons/Documents/GitHub/os-kazakhstaniwest/build/CMakeFiles/edit_cache.dir
+/Users/jons/Documents/GitHub/os-kazakhstaniwest/build/CMakeFiles/rebuild_cache.dir
